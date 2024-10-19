@@ -15,12 +15,12 @@ This repository contains infrastructure-as-code for deploying a Tailscale person
         sudo apt update && sudo apt install terraform
         ```
 - Git
-      - You can install onto your VM by running the following commands:
+     -You can install it onto your VM by running the following commands:
            ```bash
             sudo apt update
             sudo apt install git
             git --version
-            ``
+            ```
 ## Technologies Used
 
 This project is built using the following technologies:
@@ -34,8 +34,8 @@ This project is built using the following technologies:
 ### 1. Clone the Repository
 In your VM console run the following to be able to clone your repository.
 ```bash
-git clone https://github.com/hayley76/tailscale-infrastructure.git
-cd tailscale-infrastructure
+git clone https://github.com/hayley76/TailscaleTakeHome.git
+cd TailscaleTakeHome
 ```
 
 ### 2. Accessing Deployed Resources
