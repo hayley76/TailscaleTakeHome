@@ -15,7 +15,7 @@ This repository contains infrastructure-as-code for deploying a Tailscale person
         sudo apt update && sudo apt install terraform
         ```
 - Git
-     -You can install it onto your VM by running the following commands:
+     - You can install it onto your VM by running the following commands:
            ```bash
             sudo apt update
             sudo apt install git
