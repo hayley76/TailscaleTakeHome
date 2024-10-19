@@ -1,4 +1,4 @@
-# Tailscale Take Home Assignemtn
+# Tailscale Take Home Assignment
 # Tailscale Infrastructure
 
 This repository contains infrastructure-as-code for deploying a Tailscale personal Tailnet, a subnet router, and a device with SSH enabled. In this example, the deployment is set up on an Azure Linux Virtual Machine (VM)
@@ -13,13 +13,14 @@ This repository contains infrastructure-as-code for deploying a Tailscale person
     - Run the following command in your VM console:
       - ```bash
         sudo apt update && sudo apt install terraform
+        ```
 - Git
       - You can install onto your VM by running the following commands:
            ```bash
             sudo apt update
             sudo apt install git
             git --version
-
+            ``
 ## Technologies Used
 
 This project is built using the following technologies:
@@ -31,11 +32,11 @@ This project is built using the following technologies:
 ## Setup Instructions
 
 ### 1. Clone the Repository
-
-In your VM console run the following to be able to clone your respository.
+In your VM console run the following to be able to clone your repository.
 ```bash
-git clone https://github.com/your-username/tailscale-infrastructure.git
+git clone https://github.com/hayley76/tailscale-infrastructure.git
 cd tailscale-infrastructure
+```
 
 ### 2. Accessing Deployed Resources
 
@@ -50,3 +51,17 @@ Once the deployment is complete:
 Example:
      ```bash
      ssh  hayley76@100.99.207.24
+     ```
+### 6. **Documentation**
+
+1. **Installing Tailscale**: Refer to the following instructions: https://tailscale.com/kb/1347/installation
+2. **Enabling SSH**: Refer to the following instructions: https://tailscale.com/kb/1193/tailscale-ssh?q=ssh
+3. **Subnet Routers**: Refer to the following instructions: https://tailscale.com/kb/1019/subnets?q=subnet
+4. **Setting up a GitHub Repository**: Refer to the following instructions: https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories
+5. **Terraform**: Refer to the following instructions: https://developer.hashicorp.com/terraform/tutorials
+6. **Creating Azure VM:** Refer to the following instructions: https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu
+
+### 6. **Troubleshooting**
+
+1. **Unable to SSH into the VM**: Ensure that your SSH keys are properly configured and that the VM is accessible via its Tailscale IP. For instructions for please refer to the documentation above.
+2. **Deployment Issues**: If Terraform reports errors, ensure you have the correct Azure credentials set up and that your account has the necessary permissions.
