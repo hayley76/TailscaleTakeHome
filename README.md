@@ -32,13 +32,19 @@ This project is built using the following technologies:
 ## Setup Instructions
 
 ### 1. Clone the Repository
-In your VM console run the following to be able to clone your repository.
+In your VM console run the following commands to be able to clone your repository.
 ```bash
 git clone https://github.com/hayley76/TailscaleTakeHome.git
 cd TailscaleTakeHome
 ```
 
-### 2. Accessing Deployed Resources
+### 2. Deploy Terraform
+In your VM console run the following commands: 
+```bash
+terraform init
+terraform apply
+```
+### 3. Accessing Deployed Resources
 
 Once the deployment is complete:
 
@@ -52,7 +58,7 @@ Example:
      ```bash
      ssh  hayley76@100.99.207.24
      ```
-### 6. **Documentation**
+### 4. **Documentation**
 
 1. **Installing Tailscale**: Refer to the following instructions: https://tailscale.com/kb/1347/installation
 2. **Enabling SSH**: Refer to the following instructions: https://tailscale.com/kb/1193/tailscale-ssh?q=ssh
@@ -61,7 +67,7 @@ Example:
 5. **Terraform**: Refer to the following instructions: https://developer.hashicorp.com/terraform/tutorials
 6. **Creating Azure VM:** Refer to the following instructions: https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu
 
-### 6. **Troubleshooting**
+### 5. **Troubleshooting**
 
 1. **Unable to SSH into the VM**: Ensure that your SSH keys are properly configured and that the VM is accessible via its Tailscale IP. For instructions for please refer to the documentation above.
 2. **Deployment Issues**: If Terraform reports errors, ensure you have the correct Azure credentials set up and that your account has the necessary permissions.
