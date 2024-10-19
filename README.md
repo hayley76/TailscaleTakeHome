@@ -11,12 +11,14 @@ This repository contains infrastructure-as-code for deploying a Tailscale person
      - You can follow the instructions listed here [Azure]https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu for creating a VM and deploying Linux Ubuntu onto it.
 - Terraform
     - Run the following command in your VM console:
-      - sudo apt update && sudo apt install terraform
+      - ```bash
+        sudo apt update && sudo apt install terraform
 - Git
       - You can install onto your VM by running the following commands:
-          - sudo apt update
-          - sudo apt install git
-          - git --version
+           ```bash
+            sudo apt update
+            sudo apt install git
+            git --version
 
 ## Technologies Used
 
