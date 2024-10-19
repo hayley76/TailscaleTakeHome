@@ -6,9 +6,9 @@ This repository contains infrastructure-as-code for deploying a Tailscale person
 ## Prerequisites
 
 - A Tailscale account
-     - You can create an account by visiting Tailscale's website at https://tailscale.com/ and clicking the 'Get Started' button. Follow the instructions to create a personal account.
+     - You can create an account by visiting Tailscale's website at [Tailscale](https://tailscale.com/) and clicking the 'Get Started' button. Follow the instructions to create a personal account.
 - Azure VM
-     - You can follow the instructions listed here [Azure]https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu for creating a VM and deploying Linux Ubuntu onto it.
+     - You can follow the instructions listed here [Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu) for creating a VM and deploying Linux Ubuntu onto it.
 - Terraform
     - Run the following command in your VM console:
       ```bash
@@ -48,7 +48,7 @@ terraform apply
 
 Once the deployment is complete:
 
-1. Log in to the Tailscale admin console [here](https://login.tailscale.com/).
+1. Log in to the Tailscale admin console [Tailscale Admin](https://login.tailscale.com/).
 2. Find the Tailscale IP address of your deployed Azure VM.
      - You can do this by running the following on your VM console "ip addr show tailscale0" or you can find the IP address on your Tailscale Admin Console under the Addresses column.
 3. Use the following command to SSH into the VM:
