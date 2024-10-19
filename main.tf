@@ -3,12 +3,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "tailscale-rg"
-  location = "East US"
+  name     = "TailScaleVM_group"
+  location = "Canada Central"
 }
 
 resource "azurerm_virtual_network" "example" {
-  name                = "tailscale-vnet"
+  name                = "TailScaleVM-vnet"
   address_space       = ["10.0.0.0/16"]
   resource_group_name = azurerm_resource_group.example.name
   location            = azurerm_resource_group.example.location
@@ -22,7 +22,7 @@ resource "azurerm_subnet" "example" {
 }
 
 resource "azurerm_network_interface" "example" {
-  name                = "nic"
+  name                = "Hayley"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
 
@@ -34,7 +34,7 @@ resource "azurerm_network_interface" "example" {
 }
 
 resource "azurerm_linux_virtual_machine" "example" {
-  name                = "vm"
+  name                = "TailScaleVM"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
   size                = "Standard_B1ms"
@@ -66,6 +66,6 @@ resource "azurerm_linux_virtual_machine" "example" {
     #cloud-config
     runcmd:
       - curl -fsSL https://tailscale.com/install.sh | sh
-      - tailscale up --authkey your_auth_key_here --ssh
+      - tailscale up --ssh --advertise-routes=10.0.0.0/24
   EOT
 }
