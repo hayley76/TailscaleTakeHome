@@ -16,7 +16,7 @@ This repository contains infrastructure-as-code for deploying a Tailscale person
         ```
 - Git
      - You can install it onto your VM by running the following commands:
-           ```bash
+       - ```bash
             sudo apt update
             sudo apt install git
             git --version
