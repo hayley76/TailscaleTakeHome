@@ -37,7 +37,7 @@ In your VM console run the following to be able to clone your respository.
 git clone https://github.com/your-username/tailscale-infrastructure.git
 cd tailscale-infrastructure
 
-## Accessing Deployed Resources
+### 2. Accessing Deployed Resources
 
 Once the deployment is complete:
 
