@@ -6,7 +6,7 @@ This repository contains infrastructure-as-code for deploying a Tailscale person
 ## Prerequisites
 
 - A Tailscale account
-     - You can create an account by visiting Tailscale's website at [Tailscale]https://tailscale.com/ and clicking the 'Get Started' button. Follow the instructions to create a personal account.
+     - You can create an account by visiting Tailscale's website at https://tailscale.com/ and clicking the 'Get Started' button. Follow the instructions to create a personal account.
 - Azure VM
      - You can follow the instructions listed here [Azure]https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu for creating a VM and deploying Linux Ubuntu onto it.
 - Terraform
